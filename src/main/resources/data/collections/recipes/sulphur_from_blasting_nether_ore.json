@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:blasting",
+    "category": "misc",
+    "cookingtime": 100,
+    "experience": 0.2,
+    "group": "sulphur",
+    "ingredient": {
+        "item": "collections:nether_sulphur_ore"
+    },
+    "result": {
+        "id": "collections:sulphur"
+    }
+}

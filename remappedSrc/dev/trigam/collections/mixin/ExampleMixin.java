@@ -1,4 +1,4 @@
-package dev.trigam.mixin;
+package dev.trigam.collections.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

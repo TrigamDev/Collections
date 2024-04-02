@@ -1,0 +1,19 @@
+{
+    "values": [
+        "collections:pall",
+        "collections:pall_inverted",
+        "collections:chevron",
+        "collections:chevron_inverted",
+        "collections:label",
+        "collections:label_bottom",
+        "collections:ring",
+        "collections:hollow_rhombus",
+        "collections:inset_outline",
+        "collections:long_triangle",
+        "collections:long_triangle_bottom",
+        "collections:circle_left",
+        "collections:circle_right",
+        "collections:diamond",
+        "collections:shield"
+    ]
+}

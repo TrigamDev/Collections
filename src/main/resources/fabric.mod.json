@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.trigam.Collections"
+			"dev.trigam.collections.Collections"
 		]
 	},
 	"mixins": [

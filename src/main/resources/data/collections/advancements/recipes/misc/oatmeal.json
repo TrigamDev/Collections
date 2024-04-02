@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_oat": {
+            "conditions": {
+                "items": [{
+                    "items": [ "collections:oat_grain" ]
+                }]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": { "recipe": "collections:oatmeal" },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [ [
+        "has_oat",
+        "has_the_recipe"
+    ] ],
+    "rewards": {
+        "recipes": [ "collections:oatmeal" ]
+    },
+    "sends_telemetry_event": false
+}

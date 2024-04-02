@@ -1,0 +1,44 @@
+{
+	"credit": "Created by Stridey",
+	"parent": "block/carpet",
+	"textures": {
+		"side": "block/moss_side_overlay",
+		"particle": "block/moss_block",
+		"wool": "block/moss_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#wool"},
+				"east": {"uv": [0, 0, 16, 1], "texture": "#wool"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#wool"},
+				"west": {"uv": [0, 0, 16, 1], "texture": "#wool"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#wool"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#wool", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-0.001, -15.001, -0.001],
+			"to": [16.001, 1.001, 16.001],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#wool"}
+			}
+		},
+		{
+			"from": [15.999, -15.001, -0.001],
+			"to": [0.001, 1.001, 16.001],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#side", "cullface": "down"},
+				"east": {"uv": [16, 0, 0, 16], "texture": "#side", "cullface": "down"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#side", "cullface": "down"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#side", "cullface": "down"}
+			}
+		}
+	]
+}

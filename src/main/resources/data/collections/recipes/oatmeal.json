@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        [
+            { "item": "minecraft:water_bucket" },
+            { "item": "minecraft:milk_bucket" }
+        ],
+        { "item": "collections:oat_grain" },
+        { "item": "collections:oat_grain" },
+        { "item": "collections:oat_grain" },
+        { "item": "minecraft:bowl" }
+    ],
+    "result": {
+        "id": "collections:oatmeal",
+        "count": 1
+    }
+}

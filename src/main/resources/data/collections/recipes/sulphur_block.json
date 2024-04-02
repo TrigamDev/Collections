@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": { "item": "collections:sulphur" }
+    },
+    "result": {
+        "id": "collections:sulphur_block",
+        "count": 1
+    }
+}

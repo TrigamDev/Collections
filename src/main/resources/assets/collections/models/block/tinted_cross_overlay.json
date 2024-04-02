@@ -1,0 +1,92 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"overlay": "#overlay",
+		"particle": "#particle",
+		"cross": "#cross"
+	},
+	"elements": [{
+		"name": "NE Base",
+		"from": [7.8, 0, 8],
+		"to": [15, 16, 8],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"north": { "uv": [0, 0, 8, 16], "texture": "#cross", "tintindex": 0 },
+			"south": { "uv": [8, 0, 16, 16], "texture": "#cross", "tintindex": 0 }
+		}
+	}, {
+		"name": "NE Overlay",
+		"from": [7.8, 0, 8],
+		"to": [15, 16, 8],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"north": { "uv": [0, 0, 8, 16], "texture": "#overlay" },
+			"south": { "uv": [8, 0, 16, 16], "texture": "#overlay" }
+		}
+	}, {
+		"name": "SW Base",
+		"from": [0.8, 0, 8],
+		"to": [8, 16, 8],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"north": { "uv": [8, 0, 16, 16], "texture": "#cross", "tintindex": 0 },
+			"south": { "uv": [0, 0, 8, 16], "texture": "#cross", "tintindex": 0 }
+		}
+	}, {
+		"name": "SW Overlay",
+		"from": [0.8, 0, 8],
+		"to": [8, 16, 8],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"north": { "uv": [8, 0, 16, 16], "texture": "#overlay" },
+			"south": { "uv": [0, 0, 8, 16], "texture": "#overlay" }
+		}
+	}, {
+		"name": "NW Base",
+		"from": [8, 0, 0.8],
+		"to": [8, 16, 8],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"east": { "uv": [8, 0, 16, 16], "texture": "#cross", "tintindex": 0 },
+			"west": { "uv": [0, 0, 8, 16], "texture": "#cross", "tintindex": 0 }
+		}
+	}, {
+		"name": "NW Overlay",
+		"from": [8, 0, 0.8],
+		"to": [8, 16, 8],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"east": { "uv": [8, 0, 16, 16], "texture": "#overlay" },
+			"west": { "uv": [0, 0, 8, 16], "texture": "#overlay" }
+		}
+	},
+	{
+		"name": "SE Base",
+		"from": [8, 0, 8],
+		"to": [8, 16, 15.2],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"east": { "uv": [0, 0, 8, 16], "texture": "#cross", "tintindex": 0 },
+			"west": { "uv": [8, 0, 16, 16], "texture": "#cross", "tintindex": 0 }
+		}
+	}, {
+			"name": "SE Overlay",
+			"from": [8, 0, 8],
+			"to": [8, 16, 15.2],
+			"shade": false,
+			"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+			"faces": {
+				"east": { "uv": [0, 0, 8, 16], "texture": "#overlay" },
+				"west": { "uv": [8, 0, 16, 16], "texture": "#overlay" }
+			}
+		}
+	]
+}

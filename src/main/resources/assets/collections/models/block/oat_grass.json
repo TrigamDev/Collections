@@ -1,0 +1,8 @@
+{
+    "parent": "collections:block/tinted_cross_overlay",
+    "textures": {
+        "cross": "collections:block/oat_grass",
+        "overlay": "collections:block/oat_grass_overlay",
+        "particle": "collections:block/oat_grass"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": { "item": "minecraft:wheat" },
+        "@": { "item": "collections:oat_grain" }
+    },
+    "pattern": [
+        "@@@",
+        "###"
+    ],
+    "result": {
+        "count": 1,
+        "id": "collections:oat_bread"
+    }
+}
