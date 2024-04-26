@@ -1,6 +1,7 @@
 package dev.trigam.collections;
 
 import dev.trigam.collections.block.ModBannerTags;
+import dev.trigam.collections.block.ModFluidTags;
 import dev.trigam.collections.block.ModBlocks;
 import dev.trigam.collections.item.ModInventory;
 import dev.trigam.collections.item.ModItems;
@@ -25,6 +26,7 @@ public class Collections implements ModInitializer {
 		ModBlocks.register();
 		ModOres.register();
 
+		ModFluidTags.register();
 		ModBannerTags.register();
 		ModProperties.register();
 
