@@ -7,6 +7,9 @@
 
 </div>
 
+# Collections
+Collections is a Minecraft mod that adds collections of vanilla-style features. These are meant to enchance, fix, tweak, and build upon the base game in a way that fits in seamlessly.
+
 # Additions
 ## Decoration
 ### Banners
