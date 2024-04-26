@@ -1,6 +1,5 @@
 package dev.trigam.collections.item;
 
-import dev.trigam.collections.Collections;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -48,7 +47,6 @@ public class ConsumableItem extends Item {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         super.finishUsing(stack, world, user);
-        Collections.LOGGER.info("mmm cofee");
         // Incremement usage stat
         if (user instanceof ServerPlayerEntity serverPlayerEntity) {
             Criteria.CONSUME_ITEM.trigger(serverPlayerEntity, stack);

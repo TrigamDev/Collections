@@ -6,7 +6,6 @@ import dev.trigam.collections.component.ModFoodComponents;
 import net.minecraft.item.BannerPatternItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import net.minecraft.item.StewItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -18,10 +17,8 @@ public class ModItems {
         new BannerPatternItem(ModBannerTags.STAR_BANNER_PATTERN, new Item.Settings().maxCount(1))
     );
     public static final Item OAT_GRAIN = register("oat_grain", new Item(new Item.Settings().food(ModFoodComponents.OAT_GRAIN)));
-    public static final Item OATMEAL = register("oatmeal", new StewItem(new Item.Settings().maxCount(16).food(ModFoodComponents.OATMEAL)));
-    public static final Item OAT_BREAD = register("oat_bread",
-        new ConsumableItem(new Item.Settings().food(ModFoodComponents.OAT_BREAD), Items.BOWL)
-    );
+    public static final Item OATMEAL = register("oatmeal", new ConsumableItem(new Item.Settings().maxCount(16).food(ModFoodComponents.OATMEAL), Items.BOWL));
+    public static final Item OAT_BREAD = register("oat_bread", new Item(new Item.Settings().food(ModFoodComponents.OAT_BREAD)));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Collections.ModId, name), item);

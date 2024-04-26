@@ -5,6 +5,7 @@
         "block.collections.deepslate_sulphur_ore": "Deepslate Sulfur Ore",
         "block.collections.nether_sulphur_ore": "Nether Sulfur Ore",
         "block.collections.oat_grass": "Oat Grass",
+        "block.collections.colored_lamp": "Colored Lamp",
 
     "_ITEMS_": "",
         "item.collections.sulphur": "Sulfur",

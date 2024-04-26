@@ -1,0 +1,100 @@
+{
+    "variants": {
+        "lit=false,power=0": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=0": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=false,power=1": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=1": {
+            "model": "collections:block/gray_colored_lamp"
+        },
+        "lit=false,power=2": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=2": {
+            "model": "collections:block/light_gray_colored_lamp"
+        },
+        "lit=false,power=3": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=3": {
+            "model": "collections:block/white_colored_lamp"
+        },
+        "lit=false,power=4": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=4": {
+            "model": "collections:block/brown_colored_lamp"
+        },
+        "lit=false,power=5": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=5": {
+            "model": "collections:block/pink_colored_lamp"
+        },
+        "lit=false,power=6": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=6": {
+            "model": "collections:block/magenta_colored_lamp"
+        },
+        "lit=false,power=7": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=7": {
+            "model": "collections:block/purple_colored_lamp"
+        },
+        "lit=false,power=8": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=8": {
+            "model": "collections:block/blue_colored_lamp"
+        },
+        "lit=false,power=9": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=9": {
+            "model": "collections:block/light_blue_colored_lamp"
+        },
+        "lit=false,power=10": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=10": {
+            "model": "collections:block/cyan_colored_lamp"
+        },
+        "lit=false,power=11": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=11": {
+            "model": "collections:block/green_colored_lamp"
+        },
+        "lit=false,power=12": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=12": {
+            "model": "collections:block/lime_colored_lamp"
+        },
+        "lit=false,power=13": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=13": {
+            "model": "collections:block/yellow_colored_lamp"
+        },
+        "lit=false,power=14": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=14": {
+            "model": "collections:block/orange_colored_lamp"
+        },
+        "lit=false,power=15": {
+            "model": "collections:block/black_colored_lamp"
+        },
+        "lit=true,power=15": {
+            "model": "collections:block/red_colored_lamp"
+        }
+    }
+}

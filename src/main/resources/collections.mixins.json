@@ -6,7 +6,8 @@
         "bannerLayer.BannerDuplicateRecipeFix",
         "bannerLayer.BannerItemFix",
         "bannerLayer.LoomScreenHandlerFix",
-        "boatStep.BoatStep"
+        "boatStep.BoatStep",
+        "fastLamp.FastLamp"
     ],
     "injectors": {
         "defaultRequire": 1
