@@ -7,6 +7,7 @@ import dev.trigam.collections.item.ModItems;
 import dev.trigam.collections.render.ModColorProvider;
 import dev.trigam.collections.render.ModRenderLayer;
 import dev.trigam.collections.resource.ModPacks;
+import dev.trigam.collections.state.ModProperties;
 import dev.trigam.collections.worldgen.ModOres;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,9 +23,13 @@ public class Collections implements ModInitializer {
 		ModItems.register();
 		ModInventory.sort();
 		ModBlocks.register();
-		ModBannerTags.register();
 		ModOres.register();
+
+		ModBannerTags.register();
+		ModProperties.register();
+
 		ModPacks.register();
+
 		ModRenderLayer.init();
 		ModColorProvider.init();
 	}

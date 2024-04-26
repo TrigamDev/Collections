@@ -1,6 +1,6 @@
 ![Collections](.github/logo.png)
 
-<div align="center">
+<div style="display: flex; align-content: center; justify-content: center;">
 
 <a href="">![Java 17](https://img.shields.io/badge/Java%2017-ee9258?logo=coffeescript&logoColor=ffffff&labelColor=606060&style=flat-square)</a>
 <a href="">![Environment: Client & Server](https://img.shields.io/badge/environment-Client%20&%20Server-1976d2?style=flat-square)</a>
