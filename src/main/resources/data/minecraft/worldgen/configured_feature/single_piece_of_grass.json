@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [{
+                "data": { "Name": "minecraft:short_grass" },
+                "weight": 10
+            }, {
+                "data": { "Name": "collections:oat_grass" },
+                "weight": 1
+            }]
+        }
+    }
+}
