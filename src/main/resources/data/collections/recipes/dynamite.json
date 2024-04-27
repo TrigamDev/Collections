@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "redstone",
+    "ingredients": [
+        [
+            { "item": "minecraft:sand" },
+            { "item": "minecraft:red_sand" }
+        ],
+        { "item": "minecraft:gunpowder" },
+        { "item": "minecraft:paper" }
+    ],
+    "result": {
+        "id": "collections:dynamite",
+        "count": 1
+    }
+}

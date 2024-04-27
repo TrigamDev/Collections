@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "redstone",
+    "ingredients": [
+        { "item": "collections:dynamite" },
+        { "item": "minecraft:slime_ball" }
+    ],
+    "result": {
+        "id": "collections:bouncy_dynamite",
+        "count": 1
+    }
+}

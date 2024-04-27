@@ -1,0 +1,17 @@
+{
+	"entity.dynamite.throw": {
+		"subtitle": "subtitles.collections.entity.dynamite.throw",
+		"sounds": [
+			"collections:entity/dynamite/throw"
+		]
+	},
+	"entity.dynamite.bounce": {
+		"subtitle": "subtitles.collections.entity.dynamite.bounce",
+		"sounds": [
+			"collections:entity/dynamite/bounce1",
+			"collections:entity/dynamite/bounce2",
+			"collections:entity/dynamite/bounce3",
+			"collections:entity/dynamite/bounce4"
+		]
+	}
+}

@@ -21,6 +21,7 @@ public class ModInventory {
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(content -> {
+            content.addAfter(Blocks.TNT, ModItems.DYNAMITE, ModItems.BOUNCY_DYNAMITE);
             content.addAfter(Blocks.REDSTONE_LAMP, ModBlocks.COLORED_LAMP);
         });
 

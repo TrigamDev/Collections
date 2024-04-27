@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "redstone",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": { "item": "collections:dynamite" }
+    },
+    "result": {
+        "id": "minecraft:tnt",
+        "count": 1
+    },
+    "group": "tnt"
+}

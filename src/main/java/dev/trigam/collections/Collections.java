@@ -3,11 +3,14 @@ package dev.trigam.collections;
 import dev.trigam.collections.block.ModBannerTags;
 import dev.trigam.collections.block.ModFluidTags;
 import dev.trigam.collections.block.ModBlocks;
+import dev.trigam.collections.entity.ModEntityTypes;
 import dev.trigam.collections.item.ModInventory;
 import dev.trigam.collections.item.ModItems;
 import dev.trigam.collections.render.ModColorProvider;
+import dev.trigam.collections.render.ModEntityRenderers;
 import dev.trigam.collections.render.ModRenderLayer;
 import dev.trigam.collections.resource.ModPacks;
+import dev.trigam.collections.sound.ModSoundEvents;
 import dev.trigam.collections.state.ModProperties;
 import dev.trigam.collections.worldgen.ModOres;
 import net.fabricmc.api.ModInitializer;
@@ -25,6 +28,8 @@ public class Collections implements ModInitializer {
 		ModInventory.sort();
 		ModBlocks.register();
 		ModOres.register();
+		ModEntityTypes.register();
+		ModSoundEvents.register();
 
 		ModFluidTags.register();
 		ModBannerTags.register();
@@ -33,6 +38,7 @@ public class Collections implements ModInitializer {
 		ModPacks.register();
 
 		ModRenderLayer.init();
+		ModEntityRenderers.init();
 		ModColorProvider.init();
 	}
 }

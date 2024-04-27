@@ -13,6 +13,12 @@
         "item.collections.oat_grain": "Oat Grain",
         "item.collections.oatmeal": "Oatmeal",
         "item.collections.oat_bread": "Oat Bread",
+        "item.collections.dynamite": "Dynamite",
+        "item.collections.bouncy_dynamite": "Bouncy Dynamite",
+
+    "_SUBTITLES_": "",
+        "subtitles.collections.entity.dynamite.throw": "Dynamite flies",
+        "subtitles.collections.entity.dynamite.bounce": "Dynamite bounces",
 
     "_BANNER_PATTERNS": "",
         "item.collections.star_banner_pattern": "Banner Pattern",

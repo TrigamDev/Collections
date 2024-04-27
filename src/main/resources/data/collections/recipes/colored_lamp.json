@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "redstone",
+    "pattern": [
+        "###",
+        "#C#",
+        "###"
+    ],
+    "key": {
+        "#": { "item": "minecraft:redstone_lamp" },
+        "C": { "item": "minecraft:comparator" }
+    },
+    "result": {
+        "id": "collections:colored_lamp",
+        "count": 8
+    }
+}
