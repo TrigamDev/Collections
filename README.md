@@ -31,6 +31,14 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
 - A new variant of the Redstone Lamp that will change color based on redstone signal strength
 - Colors in order from highest to lowest signal strength:
   - Red, Orange, Yellow, Lime, Green, Cyan, Light Blue, Blue, Purple, Magenta, Pink, Brown, White, Light Gray, Gray, Black
+### Dynamite
+- A new, throwable version of TNT with a much weaker explosion
+  - Is made from 1 Sand, 1 Gunpowder, and 1 Paper
+  - Right click to throw, explodes on impact
+  - 4 Dynamite can be used to craft TNT, as an alternative to the slightly more expensive vanilla recipe
+- Crafting one dynamite and one slimeball will make Bouncy Dynamite
+  - Bouncy Dynamite will bounce 3 times, then explode on impact
+  - If it hits an entity, it will ignore the remaining bounces and explode immediately
 
 # Changes
 ## Decoration
