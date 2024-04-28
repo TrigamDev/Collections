@@ -51,7 +51,7 @@ public class ModBlocks {
     }
 
     public static void register() {
-        Collections.LOGGER.info("Registering blocks for {}", Collections.ModId);
+        Collections.LOGGER.info("Registering blocks for {}...", Collections.ModId);
     }
 
 }

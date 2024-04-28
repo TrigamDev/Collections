@@ -1,5 +1,6 @@
 package dev.trigam.collections.render;
 
+import dev.trigam.collections.Collections;
 import dev.trigam.collections.block.ModBlocks;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.block.Block;
@@ -10,7 +11,9 @@ import net.minecraft.item.Item;
 
 public class ModColorProvider {
 
-    public static void init() {
+    public static void register() {
+        Collections.LOGGER.info("Registering color providers for {}...", Collections.ModId);
+
         grassTint(ModBlocks.OAT_GRASS);
     }
 

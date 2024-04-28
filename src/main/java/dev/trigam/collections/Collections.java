@@ -4,6 +4,7 @@ import dev.trigam.collections.block.ModBannerTags;
 import dev.trigam.collections.block.ModFluidTags;
 import dev.trigam.collections.block.ModBlocks;
 import dev.trigam.collections.entity.ModEntityTypes;
+import dev.trigam.collections.entity.dispenser.ModDispenserBehaviors;
 import dev.trigam.collections.item.ModInventory;
 import dev.trigam.collections.item.ModItems;
 import dev.trigam.collections.render.ModColorProvider;
@@ -35,10 +36,11 @@ public class Collections implements ModInitializer {
 		ModBannerTags.register();
 		ModProperties.register();
 
+		ModDispenserBehaviors.register();
 		ModPacks.register();
 
-		ModRenderLayer.init();
-		ModEntityRenderers.init();
-		ModColorProvider.init();
+		ModRenderLayer.register();
+		ModEntityRenderers.register();
+		ModColorProvider.register();
 	}
 }

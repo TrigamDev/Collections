@@ -18,7 +18,7 @@ public class ModEntityTypes {
 	);
 
 	public static void register() {
-		Collections.LOGGER.debug("Registering entities for {}...", Collections.ModId);
+		Collections.LOGGER.info("Registering entities for {}...", Collections.ModId);
 	}
 
 }

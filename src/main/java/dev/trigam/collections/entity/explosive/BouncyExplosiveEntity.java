@@ -17,36 +17,109 @@ import net.minecraft.world.World;
 import org.joml.Vector3f;
 
 public abstract class BouncyExplosiveEntity extends ThrownItemEntity {
-	public float explosionStrength = 1.0f;
+	public float explosionStrength = 0.5f;
 	public float bounciness = 0.75f;
 	public float fuseTime = 0f;
 	private float fuseTimer = 0f;
 	private boolean timed = false;
 	public int bounces = 0;
-	public int level = 0;
 
 	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
 		super(entityType, world);
 	}
 
-	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world, LivingEntity owner, float explosionStrength, float bounciness, int level, int bounces, float fuseTime) {
-		super(entityType, owner, world);
+	// Ownerless
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world,
+		 float explosionStrength, float bounciness, int bounces
+	) {
+		super(entityType, world);
 		this.explosionStrength = explosionStrength;
 		this.bounciness = bounciness;
-		this.level = level;
+		this.bounces = bounces;
+		this.timed = false;
+	}
+
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world,
+		 float explosionStrength, float bounciness, int bounces, Vec3d pos
+	) {
+		super(entityType, world);
+		this.explosionStrength = explosionStrength;
+		this.bounciness = bounciness;
+		this.bounces = bounces;
+		this.timed = false;
+		this.setPos(pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world,
+		 float explosionStrength, float bounciness, int bounces, float fuseTime
+	) {
+		super(entityType, world);
+		this.explosionStrength = explosionStrength;
+		this.bounciness = bounciness;
 		this.bounces = bounces;
 		this.fuseTime = fuseTime;
 		this.fuseTimer = fuseTime;
 		this.timed = true;
 	}
 
-	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world, LivingEntity owner, float explosionStrength, float bounciness, int level, int bounces) {
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world,
+		 float explosionStrength, float bounciness, int bounces, float fuseTime, Vec3d pos
+	) {
+		super(entityType, world);
+		this.explosionStrength = explosionStrength;
+		this.bounciness = bounciness;
+		this.bounces = bounces;
+		this.fuseTime = fuseTime;
+		this.fuseTimer = fuseTime;
+		this.timed = true;
+		this.setPos(pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	// Owner
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world, LivingEntity owner,
+		 float explosionStrength, float bounciness, int bounces
+	) {
 		super(entityType, owner, world);
 		this.explosionStrength = explosionStrength;
 		this.bounciness = bounciness;
-		this.level = level;
 		this.bounces = bounces;
 		this.timed = false;
+	}
+
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world, LivingEntity owner,
+		 float explosionStrength, float bounciness, int bounces, Vec3d pos
+	) {
+		super(entityType, owner, world);
+		this.explosionStrength = explosionStrength;
+		this.bounciness = bounciness;
+		this.bounces = bounces;
+		this.timed = false;
+		this.setPos(pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world, LivingEntity owner,
+		 float explosionStrength, float bounciness, int bounces, float fuseTime
+	) {
+		super(entityType, owner, world);
+		this.explosionStrength = explosionStrength;
+		this.bounciness = bounciness;
+		this.bounces = bounces;
+		this.fuseTime = fuseTime;
+		this.fuseTimer = fuseTime;
+		this.timed = true;
+	}
+
+	public BouncyExplosiveEntity(EntityType<? extends ThrownItemEntity> entityType, World world, LivingEntity owner,
+		 float explosionStrength, float bounciness, int bounces, float fuseTime, Vec3d pos
+	) {
+		super(entityType, owner, world);
+		this.explosionStrength = explosionStrength;
+		this.bounciness = bounciness;
+		this.bounces = bounces;
+		this.fuseTime = fuseTime;
+		this.fuseTimer = fuseTime;
+		this.timed = true;
+		this.setPos(pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -58,11 +131,10 @@ public abstract class BouncyExplosiveEntity extends ThrownItemEntity {
 		if (!world.isClient) {
 			super.onCollision(hitResult);
 			// Kablooery
-			if (hitResult.getType() == HitResult.Type.ENTITY && !this.timed) detonate(world, this.level);
+			if (hitResult.getType() == HitResult.Type.ENTITY && !this.timed) detonate(world);
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
 	protected void onBlockHit(BlockHitResult hitBlock) {
 		World world = this.getWorld();
@@ -85,7 +157,7 @@ public abstract class BouncyExplosiveEntity extends ThrownItemEntity {
 					}
 				}
 				this.bounces--;
-			} else if (!this.timed && this.bounces <= 0) detonate(world, this.level);
+			} else if (!this.timed && this.bounces <= 0) detonate(world);
 		}
 	}
 
@@ -108,12 +180,12 @@ public abstract class BouncyExplosiveEntity extends ThrownItemEntity {
 		else super.tick();
 		// Fuse
 		if (this.timed) {
-			if (this.fuseTimer <= 0) detonate(world, this.level);
+			if (this.fuseTimer <= 0) detonate(world);
 			this.fuseTimer -= 0.05f;
 		}
 	}
 
-	public void detonate(World world, int level) {
+	public void detonate(World world) {
 		if (!world.isClient) {
 			world.createExplosion(this, this.getX(), this.getY(), this.getZ(), this.explosionStrength, World.ExplosionSourceType.TNT);
 			this.kill();

@@ -19,7 +19,8 @@ public class ModOres {
     }
 
     public static void register() {
-        Collections.LOGGER.info("Registering ores for {}", Collections.ModId);
+        Collections.LOGGER.info("Registering ores for {}...", Collections.ModId);
+
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, SULPHUR_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, NETHER_SULPHUR_PLACED_KEY);
     }

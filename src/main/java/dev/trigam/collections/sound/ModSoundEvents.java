@@ -16,7 +16,7 @@ public class ModSoundEvents {
 	}
 
 	public static void register() {
-		Collections.LOGGER.debug("Registering sound events for {}...", Collections.ModId);
+		Collections.LOGGER.info("Registering sound events for {}...", Collections.ModId);
 	}
 
 }

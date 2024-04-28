@@ -10,7 +10,8 @@ import net.minecraft.item.Items;
 public class ModInventory {
 
     public static void sort() {
-        Collections.LOGGER.info("Sorting inventory items for {}", Collections.ModId);
+        Collections.LOGGER.info("Sorting inventory items for {}...", Collections.ModId);
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
             content.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.SULPHUR_BLOCK);
         });

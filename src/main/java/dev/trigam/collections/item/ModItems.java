@@ -29,7 +29,7 @@ public class ModItems {
     }
 
     public static void register() {
-        Collections.LOGGER.info("Registering items for {}", Collections.ModId);
+        Collections.LOGGER.info("Registering items for {}...", Collections.ModId);
     }
 
 }

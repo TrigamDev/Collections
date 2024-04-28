@@ -15,7 +15,7 @@ public class ModFluidTags {
     }
 
     public static void register() {
-        Collections.LOGGER.info("Registering fluid tags for {}", Collections.ModId);
+        Collections.LOGGER.info("Registering fluid tags for {}...", Collections.ModId);
     }
 
 }
