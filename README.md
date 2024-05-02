@@ -13,47 +13,52 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
 # Additions
 ## Decoration
 ### Banners
-- Added many new banner patterns
-  - Pall, Inverted Pall, Chevron, Inverted Chevron, Label, Base Label, Annulet, Mascle, Orle, Pile, Pile Reversed, Flaunch Dexter, Flaunch Sinister, Lozenge, Escutcheon, Star
+- Added many new banner patterns.
+  - Pall, Inverted Pall, Chevron, Inverted Chevron, Label, Base Label, Annulet, Mascle, Orle, Pile, Pile Reversed, Flaunch Dexter, Flaunch Sinister, Lozenge, Escutcheon, and Star Charge.
 ## Materials
 ### Sulphur
 - A new ore and material, found somewhat commonly in both the overworld and nether.
 - It can be used with charcoal to craft gunpowder, allowing for a more peaceful way of obtaining gunpowder and an alternative to creeper farms.
+  ![Sulphur](.github/sulphur.png)
 ## Food
 ### Oats
-- Added Oat Grass, a larger, oat-tipped variant of grass that will sometimes drop Oat Grains when broken
-- Added Oat Grains, which can be eaten for low hunger on their own, or crafted into multiple food items
-  - Oatmeal, made from 3 Oat Grains, a Water Bucket, and a Bowl
-  - Oat Bread, made from 3 Wheat and 3 Oat Grains
-  - Oat Milk, which can be used in place of Milk for when Cows are tricky to find or when you want to be a vegan for some reason
+- Added Oat Grass, a larger, oat-tipped variant of grass that will sometimes drop Oat Grains when broken.
+- Added Oat Grains, which can be eaten for low hunger on their own, or crafted into multiple food items.
+  - Oatmeal, made from 3 Oat Grains, a Water Bucket, and a Bowl.
+  - Oat Bread, made from 3 Wheat and 3 Oat Grains.
+  - Oat Milk, which can be used in place of Milk for when Cows are tricky to find or when you want to be a vegan for some reason.
 ## Redstone
 ### Colored Lamp
-- A new variant of the Redstone Lamp that will change color based on redstone signal strength
+- A new variant of the Redstone Lamp that will change color based on redstone signal strength.
 - Colors in order from highest to lowest signal strength:
-  - Red, Orange, Yellow, Lime, Green, Cyan, Light Blue, Blue, Purple, Magenta, Pink, Brown, White, Light Gray, Gray, Black
+  - Red, Orange, Yellow, Lime, Green, Cyan, Light Blue, Blue, Purple, Magenta, Pink, Brown, White, Light Gray, Gray, Black.
+### Relay
+- A new utility block, similar to that of the observer. It will read the redstone signal strength of the block it's facing, and re-emit the signal strength out of the back.
+- Has a 2 game tick delay.
+- Can easily be used in combination with colored lamps for a color display.
 ### Dynamite
-- A new, throwable version of TNT with a much weaker explosion
-  - Is made from 1 Sand, 1 Gunpowder, and 1 Paper
-  - Right click to throw, explodes on impact
-  - 4 Dynamite can be used to craft TNT, as an alternative to the slightly more expensive vanilla recipe
-- Crafting one dynamite and one slimeball will make Bouncy Dynamite
-  - Bouncy Dynamite will bounce 3 times, then explode on impact
-  - If it hits an entity, it will ignore the remaining bounces and explode immediately
+- A new, throwable version of TNT with a much weaker explosion.
+  - Is made from 1 Sand, 1 Gunpowder, and 1 Paper.
+  - Right click to throw, explodes on impact.
+  - 4 Dynamite can be used to craft TNT, as an alternative to the slightly more expensive vanilla recipe.
+- Crafting one dynamite and one slimeball will make Bouncy Dynamite.
+  - Bouncy Dynamite will bounce 3 times, then explode on impact.
+  - If it hits an entity, it will ignore the remaining bounces and explode immediately.
 
 # Changes
 ## Decoration
 ### Banners
 - Retextured the banner and all of it's patterns to be less noisy and distracting.
 - Retextured the back post to use the colors and texture of spruce and lead knots.
-- Changed the banner layer limit from 6 to 32 layers
+- Changed the banner layer limit from 6 to 32 layers.
 ## Functionals
-- Changed the Beacon and End Gateway beams to be pixel-consistent
+- Changed the Beacon and End Gateway beams to be pixel-consistent.
 ## Transporation
-- Boats can now step up 1 block
-- Being mid-air no longer reduces velocity
+- Boats can now step up 1 block.
+- Being mid-air no longer reduces velocity.
 ## Redstone
-- Made the Redstone Lamp texture a lot cleaner for easier use in displays
-- Changed the delay of Redstone Lamps updating from 4 ticks to 0
+- Made the Redstone Lamp texture a lot cleaner for easier use in displays.
+- Changed the delay of Redstone Lamps updating from 4 ticks to 0.
 
 # Credits
 - Sulphur texture inspiration: [u/Chad_Minecraft](https://www.reddit.com/r/Minecraft/comments/lqp23y/i_made_sulphur_items_in_the_style_of_minecraft/)

@@ -9,7 +9,7 @@
                         "type": "minecraft:weighted_state_provider",
                         "entries": [{
                             "data": { "Name": "minecraft:short_grass" },
-                            "weight": 8
+                            "weight": 12
                         }, {
                             "data": { "Name": "collections:oat_grass" },
                             "weight": 1

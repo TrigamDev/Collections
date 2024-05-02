@@ -1,0 +1,8 @@
+{
+    "parent": "collections:block/relay",
+    "textures": {
+        "bottom": "collections:block/relay_back_on",
+        "side": "collections:block/relay_side_4",
+        "top": "collections:block/relay_top_4"
+    }
+}

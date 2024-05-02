@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 public class ModColorProvider {
 
     public static void register() {
-        Collections.LOGGER.info("Registering color providers for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Registering color providers for {}...", Collections.ModId);
 
         grassTint(ModBlocks.OAT_GRASS);
     }

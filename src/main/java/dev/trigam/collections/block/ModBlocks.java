@@ -13,6 +13,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
+    // Sulphur
     public static final Block SULPHUR_BLOCK = register("sulphur_block",
         new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_YELLOW).requiresTool().strength(3.0F, 3.0F))
     );
@@ -34,11 +35,18 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(SULPHUR_ORE).mapColor(MapColor.DARK_RED).strength(3.0F, 3.0F).sounds(BlockSoundGroup.NETHER_ORE)
         )
     );
+
+    // Vegetation
     public static final Block OAT_GRASS = register("oat_grass",
         new ShortPlantBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS).nonOpaque())
     );
+
+    // Redstone
     public static final Block COLORED_LAMP = register("colored_lamp",
         new ColoredLampBlock(AbstractBlock.Settings.copy(Blocks.REDSTONE_LAMP).mapColor(MapColor.TERRACOTTA_BLACK))
+    );
+    public static final Block RELAY = register("relay",
+        new RelayBlock(AbstractBlock.Settings.copy(Blocks.OBSERVER))
     );
 
     private static Block register(String name, Block block) {
@@ -51,7 +59,7 @@ public class ModBlocks {
     }
 
     public static void register() {
-        Collections.LOGGER.info("Registering blocks for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Registering blocks for {}...", Collections.ModId);
     }
 
 }

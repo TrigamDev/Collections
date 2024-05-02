@@ -9,7 +9,7 @@ public class ModDispenserBehaviors {
     public static void register() {
         DispenserBlock.registerProjectileBehavior(ModItems.DYNAMITE);
 
-        Collections.LOGGER.info("Registering dispenser behaviors for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Registering dispenser behaviors for {}...", Collections.ModId);
     }
 
 }

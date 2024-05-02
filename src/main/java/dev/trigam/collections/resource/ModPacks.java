@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 public class ModPacks {
 
     public static void register() {
-        Collections.LOGGER.info("Registering built in resource packs for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Registering built in resource packs for {}...", Collections.ModId);
         FabricLoader.getInstance().getModContainer(Collections.ModId).ifPresent(container -> {
             // Collections: Tweaks
             ResourceManagerHelper.registerBuiltinResourcePack(

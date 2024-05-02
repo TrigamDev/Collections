@@ -2,6 +2,7 @@ package dev.trigam.collections.entity;
 
 import dev.trigam.collections.Collections;
 import dev.trigam.collections.entity.explosive.DynamiteEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -10,15 +11,17 @@ import net.minecraft.util.Identifier;
 
 public class ModEntityTypes {
 
-	public static final EntityType<DynamiteEntity> DynamiteEntityType = Registry.register(
-		Registries.ENTITY_TYPE,
+	public static final EntityType<DynamiteEntity> DynamiteEntityType = register(
 		new Identifier(Collections.ModId, "dynamite"),
 		EntityType.Builder.<DynamiteEntity>create(DynamiteEntity::new, SpawnGroup.MISC).dimensions(0.25f, 0.25f)
-			.build(Collections.ModId + ":dynamite")
+			.maxTrackingRange(4).trackingTickInterval(10)
 	);
 
-	public static void register() {
-		Collections.LOGGER.info("Registering entities for {}...", Collections.ModId);
+	private static <T extends Entity> EntityType<T> register(Identifier id, EntityType.Builder<T> type) {
+		return Registry.register(Registries.ENTITY_TYPE, id, type.build(id.getPath()));
 	}
 
+	public static void register() {
+		Collections.LOGGER.debug("Registering entities for {}...", Collections.ModId);
+	}
 }

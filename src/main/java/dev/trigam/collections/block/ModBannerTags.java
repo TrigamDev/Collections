@@ -15,7 +15,7 @@ public class ModBannerTags {
     }
 
     public static void register() {
-        Collections.LOGGER.info("Registering banner pattern tags for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Registering banner pattern tags for {}...", Collections.ModId);
     }
 
 }

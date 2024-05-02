@@ -31,7 +31,7 @@ public class DynamiteEntity extends BouncyExplosiveEntity {
 		super(entityType, world);
 	}
 
-	@Override
+    @Override
 	public void playBounceSound(World world, BlockPos pos) {
 		world.playSound(null, pos, ModSoundEvents.ENTITY_DYNAMITE_BOUNCE, SoundCategory.BLOCKS, 1.0f, 1.0f);
 	}

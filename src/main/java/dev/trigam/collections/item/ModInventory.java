@@ -10,7 +10,7 @@ import net.minecraft.item.Items;
 public class ModInventory {
 
     public static void sort() {
-        Collections.LOGGER.info("Sorting inventory items for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Sorting inventory items for {}...", Collections.ModId);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
             content.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.SULPHUR_BLOCK);
@@ -22,6 +22,7 @@ public class ModInventory {
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(content -> {
+            content.addAfter(Blocks.OBSERVER, ModBlocks.RELAY);
             content.addAfter(Blocks.TNT, ModItems.DYNAMITE, ModItems.BOUNCY_DYNAMITE);
             content.addAfter(Blocks.REDSTONE_LAMP, ModBlocks.COLORED_LAMP);
         });

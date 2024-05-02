@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 import org.joml.Vector3f;
 
 public abstract class BouncyExplosiveEntity extends ThrownItemEntity {
-	public float explosionStrength = 0.5f;
+	public float explosionStrength = 1.0f;
 	public float bounciness = 0.75f;
 	public float fuseTime = 0f;
 	private float fuseTimer = 0f;

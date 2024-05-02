@@ -8,7 +8,7 @@ import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 public class ModEntityRenderers {
 
 	public static void register() {
-		Collections.LOGGER.info("Registering entity renderers for {}...", Collections.ModId);
+		Collections.LOGGER.debug("Registering entity renderers for {}...", Collections.ModId);
 
 		EntityRendererRegistry.register(ModEntityTypes.DynamiteEntityType, FlyingItemEntityRenderer::new);
 	}

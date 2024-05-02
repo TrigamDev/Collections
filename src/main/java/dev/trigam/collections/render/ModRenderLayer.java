@@ -8,7 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 public class ModRenderLayer {
 
     public static void register() {
-        Collections.LOGGER.info("Registering render layers for {}...", Collections.ModId);
+        Collections.LOGGER.debug("Registering render layers for {}...", Collections.ModId);
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), ModBlocks.OAT_GRASS);
     }
