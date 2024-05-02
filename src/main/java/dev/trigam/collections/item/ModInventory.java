@@ -30,6 +30,7 @@ public class ModInventory {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {
             content.addAfter(Items.BREAD, ModItems.OAT_BREAD);
             content.addAfter(Items.RABBIT_STEW, ModItems.OATMEAL);
+            content.addAfter(Items.MILK_BUCKET, ModItems.OAT_MILK_BUCKET);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {

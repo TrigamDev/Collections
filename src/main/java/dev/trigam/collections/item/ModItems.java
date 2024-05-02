@@ -7,6 +7,7 @@ import dev.trigam.collections.item.explosive.DynamiteItem;
 import net.minecraft.item.BannerPatternItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.item.MilkBucketItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -20,6 +21,7 @@ public class ModItems {
     public static final Item OAT_GRAIN = register("oat_grain", new Item(new Item.Settings().food(ModFoodComponents.OAT_GRAIN)));
     public static final Item OATMEAL = register("oatmeal", new ConsumableItem(new Item.Settings().maxCount(16).food(ModFoodComponents.OATMEAL), Items.BOWL));
     public static final Item OAT_BREAD = register("oat_bread", new Item(new Item.Settings().food(ModFoodComponents.OAT_BREAD)));
+    public static final Item OAT_MILK_BUCKET = register("oat_milk_bucket", new MilkBucketItem(new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     public static final Item DYNAMITE = register("dynamite", new DynamiteItem(new Item.Settings().maxCount(16), 0));
     public static final Item BOUNCY_DYNAMITE = register("bouncy_dynamite", new DynamiteItem(new Item.Settings().maxCount(16), 3));
