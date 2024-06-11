@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
 		"overlay": "#overlay",
@@ -78,15 +77,14 @@
 			"west": { "uv": [8, 0, 16, 16], "texture": "#cross", "tintindex": 0 }
 		}
 	}, {
-			"name": "SE Overlay",
-			"from": [8, 0, 8],
-			"to": [8, 16, 15.2],
-			"shade": false,
-			"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
-			"faces": {
-				"east": { "uv": [0, 0, 8, 16], "texture": "#overlay" },
-				"west": { "uv": [8, 0, 16, 16], "texture": "#overlay" }
-			}
+		"name": "SE Overlay",
+		"from": [8, 0, 8],
+		"to": [8, 16, 15.2],
+		"shade": false,
+		"rotation": { "angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true },
+		"faces": {
+			"east": { "uv": [0, 0, 8, 16], "texture": "#overlay" },
+			"west": { "uv": [8, 0, 16, 16], "texture": "#overlay" }
 		}
-	]
+	}]
 }

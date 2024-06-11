@@ -1,0 +1,34 @@
+{
+	"description": { "translate": "enchantment.minecraft.efficiency" },
+	"effects": {
+		"minecraft:attributes": [{
+			"amount": {
+				"type": "minecraft:levels_squared",
+				"added": 1.0
+			},
+			"attribute": "minecraft:player.mining_efficiency",
+			"id": "minecraft:enchantment.efficiency",
+			"operation": "add_value"
+		}]
+	},
+	"max_level": 5,
+
+	"supported_items": "#minecraft:enchantable/mining",
+	"slots": [ "mainhand" ],
+
+	"cost": { "base": 3, "per_level_above_first": 1 },
+	"enchantment_slot_cost": { "base": 1, "per_level_above_first": 0 },
+
+	"anvil_cost": 1,
+	"min_cost": { "base": 1, "per_level_above_first": 10 },
+	"max_cost": { "base": 51, "per_level_above_first": 10 },
+	
+	"weight": 10,
+
+	"enchanting_table": {
+		"asset_id": "collections:efficiency/efficiency",
+		"highlighted_asset_id": "collections:efficiency/efficiency_highlighted",
+		"unobtained_asset_id": "collections:efficiency/efficiency_unobtained",
+		"locked_asset_id": "collections:efficiency/efficiency_locked"
+	}
+}

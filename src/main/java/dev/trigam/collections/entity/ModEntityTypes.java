@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModEntityTypes {
 
 	public static final EntityType<DynamiteEntity> DynamiteEntityType = register(
-		new Identifier(Collections.ModId, "dynamite"),
+		Collections.id("dynamite"),
 		EntityType.Builder.<DynamiteEntity>create(DynamiteEntity::new, SpawnGroup.MISC).dimensions(0.25f, 0.25f)
 			.maxTrackingRange(4).trackingTickInterval(10)
 	);

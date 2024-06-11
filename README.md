@@ -13,12 +13,12 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
 # Additions
 ## Decoration
 ### Banners
-- Added many new banner patterns.
+- Added many new Banner patterns.
   - Pall, Inverted Pall, Chevron, Inverted Chevron, Label, Base Label, Annulet, Mascle, Orle, Pile, Pile Reversed, Flaunch Dexter, Flaunch Sinister, Lozenge, Escutcheon, and Star Charge.
 ## Materials
 ### Sulphur
-- A new ore and material, found somewhat commonly in both the overworld and nether.
-- It can be used with charcoal to craft gunpowder, allowing for a more peaceful way of obtaining gunpowder and an alternative to creeper farms.
+- A new ore and material, found somewhat commonly in both the Overworld and Nether.
+- It can be used with Charcoal to craft Gunpowder, allowing for a more peaceful way of obtaining Gunpowder and an alternative to Creeper farms.
   ![Sulphur](.github/sulphur.png)
 ## Food
 ### Oats
@@ -33,9 +33,9 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
 - Colors in order from highest to lowest signal strength:
   - Red, Orange, Yellow, Lime, Green, Cyan, Light Blue, Blue, Purple, Magenta, Pink, Brown, White, Light Gray, Gray, Black.
 ### Relay
-- A new utility block, similar to that of the observer. It will read the redstone signal strength of the block it's facing, and re-emit the signal strength out of the back.
+- A new utility block, similar to that of the Observer. It will read the redstone signal strength of the block it's facing, and re-emit the signal strength out of the back.
 - Has a 2 game tick delay.
-- Can easily be used in combination with colored lamps for a color display.
+- Can easily be used in combination with Colored Lamps for a color display.
 ### Dynamite
 - A new, throwable version of TNT with a much weaker explosion.
   - Is made from 1 Sand, 1 Gunpowder, and 1 Paper.
@@ -46,11 +46,15 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
   - If it hits an entity, it will ignore the remaining bounces and explode immediately.
 
 # Changes
+## Natural
+### Plants
+- Changed Leaves to have a dark background, rather than a black background when Fast Graphics is enabled
+  - Waterlogged Leaves will also show water inside, as well
 ## Decoration
 ### Banners
-- Retextured the banner and all of it's patterns to be less noisy and distracting.
+- Retextured the Banner and all of it's patterns to be less noisy and distracting.
 - Retextured the back post to use the colors and texture of spruce and lead knots.
-- Changed the banner layer limit from 6 to 32 layers.
+- Changed the Banner layer limit from 6 to 32 layers.
 ## Functionals
 - Changed the Beacon and End Gateway beams to be pixel-consistent.
 ## Transporation
@@ -62,4 +66,5 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
 
 # Credits
 - Sulphur texture inspiration: [u/Chad_Minecraft](https://www.reddit.com/r/Minecraft/comments/lqp23y/i_made_sulphur_items_in_the_style_of_minecraft/)
+- Jungle Log side: [Copper's Enhanced Jungle Logs](https://www.planetminecraft.com/texture-pack/copper-s-enhanced-jungle-logs/)
 - Ideas for many fixes/tweaks: [Vanilla Tweaks](https://vanillatweaks.net)

@@ -18,6 +18,9 @@
 	"entrypoints": {
 		"main": [
 			"dev.trigam.collections.Collections"
+		],
+		"client": [
+			"dev.trigam.collections.CollectionsClient"
 		]
 	},
 	"mixins": [
@@ -25,7 +28,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
+		"minecraft": "~1.21-alpha",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

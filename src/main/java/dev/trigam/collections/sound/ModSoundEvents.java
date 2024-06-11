@@ -8,8 +8,8 @@ import net.minecraft.util.Identifier;
 
 public class ModSoundEvents {
 
-	public static SoundEvent ENTITY_DYNAMITE_THROW = register(new Identifier(Collections.ModId, "entity.dynamite.throw"));
-	public static SoundEvent ENTITY_DYNAMITE_BOUNCE = register(new Identifier(Collections.ModId, "entity.dynamite.bounce"));
+	public static SoundEvent ENTITY_DYNAMITE_THROW = register(Collections.id("entity.dynamite.throw"));
+	public static SoundEvent ENTITY_DYNAMITE_BOUNCE = register(Collections.id("entity.dynamite.bounce"));
 
 	private static SoundEvent register(Identifier id) {
 		return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));

@@ -68,11 +68,6 @@ public class ConsumableItem extends Item {
     }
 
     @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return this.usageTime;
-    }
-
-    @Override
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.EAT;
     }

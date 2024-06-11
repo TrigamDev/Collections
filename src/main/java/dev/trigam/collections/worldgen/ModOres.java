@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
@@ -15,7 +14,7 @@ public class ModOres {
     public static final RegistryKey<PlacedFeature> NETHER_SULPHUR_PLACED_KEY = register("ore_sulphur_nether");
 
     private static RegistryKey<PlacedFeature> register(String id) {
-        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Collections.ModId, id));
+        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Collections.id(id));
     }
 
     public static void register() {

@@ -10,7 +10,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.MilkBucketItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 
 public class ModItems {
 
@@ -27,7 +26,7 @@ public class ModItems {
     public static final Item BOUNCY_DYNAMITE = register("bouncy_dynamite", new DynamiteItem(new Item.Settings().maxCount(16), 3));
 
     private static Item register(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(Collections.ModId, name), item);
+        return Registry.register(Registries.ITEM, Collections.id(name), item);
     }
 
     public static void register() {
