@@ -29,7 +29,7 @@ public class ModEnchantmentScreenHandler extends ScreenHandler {
         public void markDirty() {
             super.markDirty();
             ModEnchantmentScreenHandler.this.onContentChanged(this);
-        };
+        }
     };
     private List<Enchantment> availableEnchantments = Lists.newArrayList();
 
