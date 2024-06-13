@@ -3,19 +3,19 @@
     "package": "dev.trigam.collections.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
-        "bannerLayer.BannerDuplicateRecipeFix",
-        "bannerLayer.BannerItemFix",
-        "bannerLayer.LoomScreenHandlerFix",
-        "boatStep.BoatStep",
-        "enchantmentOverhaul.AddEnchantmentDefinitonFields",
-        "enchantmentOverhaul.ReplaceEnchantingTableScreen",
-        "fastLamp.FastLamp",
-        "redstoneConnects.RedstoneNoConnection"
+        "decoration.bannerLayer.BannerDuplicateRecipeFix",
+        "decoration.bannerLayer.BannerItemFix",
+        "decoration.bannerLayer.LoomScreenHandlerFix",
+        "enchanting.enchantments.ReplaceEnchantingTableScreen",
+        "redstone.FastLamp",
+        "redstone.RedstoneConnectsTo",
+        "transportation.BoatStep",
+        "transportation.VehicleLeafCollision"
     ],
     "injectors": {
         "defaultRequire": 1
     },
     "client": [
-        "bannerLayer.LoomScreenFix"
+        "decoration.bannerLayer.LoomScreenFix"
     ]
 }

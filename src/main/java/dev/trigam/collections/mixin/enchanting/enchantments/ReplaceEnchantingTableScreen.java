@@ -1,4 +1,4 @@
-package dev.trigam.collections.mixin.enchantmentOverhaul;
+package dev.trigam.collections.mixin.enchanting.enchantments;
 
 import dev.trigam.collections.screen.ModEnchantmentScreenHandler;
 import net.minecraft.block.AbstractBlock;

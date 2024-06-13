@@ -60,6 +60,10 @@ Collections is a Minecraft mod that adds collections of vanilla-style features. 
 ## Transporation
 - Boats can now step up 1 block.
 - Being mid-air no longer reduces velocity.
+- Horses, Camels, and other rideable mobs are now able to move through leaves.
+  - Leaves, when coming from the side, have no collision.
+  - Leaves have collision when above, allowing you to still stand on them.
+  - Leaves will also no longer block your camera.
 ## Redstone
 - Made the Redstone Lamp texture a lot cleaner for easier use in displays.
 - Changed the delay of Redstone Lamps updating from 4 ticks to 0.

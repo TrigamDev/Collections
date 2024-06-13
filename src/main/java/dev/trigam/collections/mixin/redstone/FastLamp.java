@@ -1,4 +1,4 @@
-package dev.trigam.collections.mixin.fastLamp;
+package dev.trigam.collections.mixin.redstone;
 
 import net.minecraft.block.RedstoneLampBlock;
 import org.spongepowered.asm.mixin.Mixin;

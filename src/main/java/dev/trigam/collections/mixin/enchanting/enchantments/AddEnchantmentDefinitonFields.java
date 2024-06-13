@@ -1,4 +1,4 @@
-package dev.trigam.collections.mixin.enchantmentOverhaul;
+package dev.trigam.collections.mixin.enchanting.enchantments;
 
 import net.minecraft.component.ComponentMap;
 import net.minecraft.enchantment.Enchantment;

@@ -1,4 +1,4 @@
-package dev.trigam.collections.mixin.boatStep;
+package dev.trigam.collections.mixin.transportation;
 
 import dev.trigam.collections.CollectionsConfig;
 import dev.trigam.collections.block.ModFluidTags;

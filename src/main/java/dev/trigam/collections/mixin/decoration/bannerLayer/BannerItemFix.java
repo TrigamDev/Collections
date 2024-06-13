@@ -1,4 +1,4 @@
-package dev.trigam.collections.mixin.bannerLayer;
+package dev.trigam.collections.mixin.decoration.bannerLayer;
 
 import dev.trigam.collections.CollectionsConfig;
 import net.minecraft.item.BannerItem;

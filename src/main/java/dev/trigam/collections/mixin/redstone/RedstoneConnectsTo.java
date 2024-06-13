@@ -1,4 +1,4 @@
-package dev.trigam.collections.mixin.redstoneConnects;
+package dev.trigam.collections.mixin.redstone;
 
 import dev.trigam.collections.block.ModBlocks;
 import dev.trigam.collections.block.RelayBlock;
@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(RedstoneWireBlock.class)
-public class RedstoneNoConnection {
+public class RedstoneConnectsTo {
     @Inject(at = @At("HEAD"), method = "connectsTo(Lnet/minecraft/block/BlockState;Lnet/minecraft/util/math/Direction;)Z", cancellable = true)
     private static void connectsTo(BlockState state, Direction dir, CallbackInfoReturnable<Boolean> cir) {
         if (state.isOf(ModBlocks.RELAY)) {
